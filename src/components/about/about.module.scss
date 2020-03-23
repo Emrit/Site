@@ -1,8 +1,19 @@
+@import '../../scss/mixins';
+
 .container {
   color: black;
-  margin: 5rem 0;
+  margin-top: 5rem;
   background-color: #eeeeee;
   min-height: 60vh;
+  margin-bottom: 5rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 1.5rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 1rem;
+  }
 
   .fluidContainer {
     height: 100%;
@@ -28,6 +39,10 @@
       font-size: 2rem;
       margin-bottom: 1.4rem;
       text-align: center;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
@@ -35,11 +50,15 @@
       margin-bottom: 1rem;
       font-weight: 400;
       padding: 0 1rem;
+
+      @include respond(phone) {
+        padding: 0 0.2rem;
+      }
     }
   }
 
   .rightContainer {
-    min-height: 60vh;
+    margin: 2rem 0;
     flex: 1;
     display: flex;
     justify-content: center;

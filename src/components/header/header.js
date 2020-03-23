@@ -6,7 +6,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 function Header(props) {
   return (
     <div className={styles.container}>
-      <Container className={styles.fluidContainer}>
+      <Container className={styles.fluidContainer} fluid>
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={6} className={styles.col}>
             <div className={styles.leftContainer}>
