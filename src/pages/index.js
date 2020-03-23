@@ -1,67 +1,16 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import get from 'lodash/get'
-
-import Post from 'templates/post'
-import Meta from 'components/meta'
 import Layout from 'components/layout'
+import Header from 'components/header/header'
+import About from 'components/about/about'
 
-const BlogIndex = ({ data, location }) => {
-  const posts = get(data, 'remark.posts')
+const IndePage = ({ data, location }) => {
   return (
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
-      {posts.map(({ post }, i) => (
-        <Post
-          data={post}
-          options={{
-            isIndex: true,
-          }}
-          key={i}
-        />
-      ))}
+      <Header />
+      <About />
     </Layout>
   )
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        url: siteUrl
-        author
-        twitter
-        adsense
-      }
-    }
-    remark: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      posts: edges {
-        post: node {
-          html
-          frontmatter {
-            layout
-            title
-            path
-            category
-            tags
-            description
-            date(formatString: "YYYY/MM/DD")
-            image {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+export default IndePage

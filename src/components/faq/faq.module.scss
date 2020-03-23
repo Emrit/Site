@@ -1,0 +1,48 @@
+.container {
+  color: black;
+  margin: 5rem 0;
+  background-color: #eeeeee;
+  min-height: 60vh;
+
+  .fluidContainer {
+    height: 100%;
+  }
+
+  .row {
+    height: 100%;
+    min-height: 60vh;
+  }
+
+  .col {
+    height: 100%;
+  }
+
+  .leftContainer {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1.4rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+      padding: 0 1rem;
+    }
+  }
+
+  .rightContainer {
+    min-height: 60vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

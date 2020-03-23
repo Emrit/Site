@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
+    title: 'Emrit',
     description: 'Gatsby starter for bootstrap a blog',
     siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    author: 'trinac',
+    twitter: 'trinac',
     adsense: '',
   },
   pathPrefix: '/',
@@ -94,5 +94,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
     'gatsby-transformer-sharp',
+    `gatsby-plugin-sass`,
   ],
 }
