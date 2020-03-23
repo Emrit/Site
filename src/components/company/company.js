@@ -237,7 +237,10 @@ function Company(props) {
                   setContent(0)
                 }}
               >
-                <h3> What is this?</h3>
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/CEO.jpg')}
+                />
               </div>
               <div
                 className={styles.box}
@@ -245,7 +248,10 @@ function Company(props) {
                   setContent(1)
                 }}
               >
-                <h3> Why my wifi?</h3>
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/Kavitha_Palani.jpg')}
+                />
               </div>
               <div
                 className={styles.box}
@@ -253,7 +259,10 @@ function Company(props) {
                   setContent(2)
                 }}
               >
-                <h3> Installation</h3>
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/Randall_Pires.jpg')}
+                />
               </div>
               <div
                 className={styles.box}
@@ -261,7 +270,10 @@ function Company(props) {
                   setContent(3)
                 }}
               >
-                <h3> Relocation</h3>
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/Empty.png')}
+                />
               </div>
             </div>
           </Col>
