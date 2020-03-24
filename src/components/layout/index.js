@@ -30,6 +30,15 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <div className={styles.container}>
+        <div className={styles.topHeader}>
+          <a
+            class="header-top-bar"
+            target="_blank"
+            href="http://dashboard.helium.com/d/vHLwU-cZz/hotspot-earnings?orgId=1&refresh=1m"
+          >
+            <p>Check your hotspot’s earning NOW! Click here to view.</p>
+          </a>
+        </div>
         <Navi title={siteMetadata.title} {...this.props} />
         {children}
         <Footer />

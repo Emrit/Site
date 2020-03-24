@@ -1,8 +1,32 @@
 .container {
-  // background-image: linear-gradient(
-  //   rgba(255, 255, 255, 0) 0%,
-  //   rgb(255, 255, 255) 100%
-  // );
   background-color: #ffffff;
   box-sizing: border-box;
+
+  .topHeader {
+    height: 1.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(134deg, #27284b 0%, #27284b 100%);
+
+    &:hover {
+      background: linear-gradient(
+        to right,
+        rgba(90, 190, 137, 1) 0%,
+        rgba(37, 181, 189, 1) 50%,
+        rgba(66, 138, 201, 1) 100%
+      );
+    }
+  }
+
+  a {
+    p {
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 800;
+    }
+  }
 }
