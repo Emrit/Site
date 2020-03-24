@@ -8,3 +8,4 @@ public
 
 # Local Netlify folder
 .netlify
+.now

@@ -1,13 +1,26 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './contact.module.scss'
-import { Container, Row, Col, Button, Form } from 'react-bootstrap'
-
+import { Container, Row, Col, Button, Form, Modal } from 'react-bootstrap'
+import axios from 'axios'
+import { useLocation } from 'gatsby'
 import { useForm, useField, splitFormProps } from 'react-form'
 
-async function sendToFakeServer(values) {
-  console.log(values)
-  await new Promise(resolve => setTimeout(resolve, 1000))
+async function sendToServer(values) {
+  const contact = [values.name, values.email, values.subject, values.comment]
+  try {
+    const data = await axios.post(
+      'https://intense-coast-38395.herokuapp.com/api/v1/dev/contactEmrit',
+      {
+        contact,
+      }
+    )
+
+    console.group(data.data, 'data')
+  } catch (error) {
+    console.log(error, 'error')
+  }
+  //   await new Promise(resolve => setTimeout(resolve, 1000))
   return values
 }
 
@@ -93,8 +106,9 @@ const InputField = React.forwardRef((props, ref) => {
   )
 })
 
-function Contact() {
+function Contact(props) {
   // Use the useForm hook to create a form instance
+  // console.log(props)
   const {
     Form,
     meta: { isSubmitting, canSubmit },
@@ -102,7 +116,8 @@ function Contact() {
     onSubmit: async (values, instance) => {
       // onSubmit (and everything else in React Form)
       // has async support out-of-the-box
-      await sendToFakeServer(values)
+      await sendToServer(values)
+      props.handleShow()
       console.log('Huzzah!')
     },
     // debugForm: true,
@@ -147,14 +162,44 @@ function Contact() {
 }
 
 function ContactPage(props) {
+  const [show, setShow] = useState(false)
+  const handleClose = () => {
+    props.navigate('/')
+    setShow(false)
+  }
+  const handleShow = () => setShow(true)
+
+  console.log(props)
   return (
     <div className={styles.container}>
+      <Modal
+        style={{ width: '90%', margin: 'auto' }}
+        show={show}
+        centered
+        onHide={handleClose}
+      >
+        <Modal.Header>
+          <Modal.Title>Emrit</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          Thanks for your feedback, we would get back to you as soon as possible
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Done
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <Container className={styles.fluidContainer} fluid>
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={12} className={styles.col}>
             <div className={styles.leftContainer}></div>
             <div className={styles.rightContainer}>
-              <Contact />
+              <Contact
+                handleShow={() => {
+                  handleShow()
+                }}
+              />
             </div>
           </Col>
         </Row>
