@@ -1,9 +1,11 @@
+@import '../..//scss/mixins';
+
 .container {
   background-color: #ffffff;
   box-sizing: border-box;
 
   .topHeader {
-    height: 1.8rem;
+    min-height: 1.8rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,6 +29,11 @@
       color: white;
       font-size: 0.7rem;
       font-weight: 800;
+
+      @include respond(phone) {
+        padding: 1rem 2rem;
+        text-align: center;
+      }
     }
   }
 }

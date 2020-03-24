@@ -1,6 +1,21 @@
 @import '../scss/mixins';
 @import '../scss/colors.scss';
 
+.modalBody {
+  font-size: 0.8rem;
+}
+
+.header {
+  height: 7rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(
+    to top right,
+    rgba(90, 190, 137, 1) 0%,
+    rgba(37, 181, 189, 1) 50%,
+    rgba(66, 138, 201, 1) 100%
+  );
+}
+
 .container {
   color: black;
   background-color: #ffffff;
