@@ -1,0 +1,118 @@
+@import '../../scss/mixins';
+@import '../../scss/colors.scss';
+
+.container {
+  .Card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    min-height: 20rem;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      padding: 1rem 0.5rem;
+    }
+
+    .carousel {
+      //   background-color: rebeccapurple;
+      margin: 0;
+
+      h4 {
+        margin-bottom: 1rem;
+        span {
+          font-weight: 300;
+          font-size: 0.75rem;
+          margin-left: 0.3rem;
+        }
+      }
+    }
+
+    .imgContainer {
+      height: 15rem;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      @include respond(phone) {
+        height: 10rem;
+      }
+
+      .headerImage {
+        height: 100%;
+        margin: auto;
+      }
+    }
+
+    .imgContainerRight {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      @include respond(phone) {
+        height: 10rem;
+      }
+
+      .headerImage {
+        width: 100%;
+        margin: auto;
+        border-radius: 1rem;
+      }
+    }
+
+    .content {
+      flex: 1;
+      margin-bottom: 2rem;
+
+      .list {
+        font-weight: 400;
+        font-size: 0.9rem;
+
+        @include respond(phone) {
+          font-size: 0.75rem;
+        }
+
+        li {
+          margin: 0.5rem 0;
+        }
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      h4 {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .button {
+        background-color: $green;
+        border-color: transparent;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        font-size: 0.7rem;
+        -webkit-box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
+        -moz-box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
+        box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
+      }
+    }
+  }
+}
