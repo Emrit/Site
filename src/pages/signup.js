@@ -77,8 +77,11 @@ function SignupPage(props) {
       event.stopPropagation()
       setValidated(true)
     } else {
-      //   setValidated(false)
+      event.preventDefault()
+      event.stopPropagation()
       submit()
+      //   setValidated(false)
+      //   submit()
     }
   }
 
