@@ -31,7 +31,7 @@ class Navi extends React.PureComponent {
             <Link to="/" className={styles.logoText}>
               <Img
                 src={require('../../assets/logo-nav.svg')}
-                style={{ height: '2.5rem', marginBottom: 0 }}
+                className={styles.image}
               />
             </Link>
           </div>
@@ -66,16 +66,8 @@ class Navi extends React.PureComponent {
             })
           }}
           noOverlay={false}
-          // noOverlay={this.state.noOverlay}
         >
           <div className={styles.menuDropDown}>
-            {/* <Link to="/" className={styles.logoText}>
-              <Img
-                src={require('../../assets/logo-nav.svg')}
-                style={{ height: '2.5rem', marginBottom: 0 }}
-              />
-            </Link> */}
-
             <Link to="/about" className={styles.link}>
               About
             </Link>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './header.module.scss'
+import Img from 'react-image'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 
 function Header(props) {
@@ -16,7 +17,12 @@ function Header(props) {
             </div>
           </Col>
           <Col xs={12} md={12} lg={6} className={styles.col}>
-            <div className={styles.rightContainer}> Hi</div>
+            <div className={styles.rightContainer}>
+              <Img
+                src={require('../../assets/header/Emrits_White.svg')}
+                className={styles.image}
+              />
+            </div>
           </Col>
         </Row>
       </Container>

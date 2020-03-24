@@ -3,6 +3,10 @@
 .container {
   background: rgba(0, 90, 89, 0.9);
 
+  @include respond(phone) {
+    padding-bottom: 0 !important;
+  }
+
   .subHeader {
     padding: 0.1rem 5rem;
     display: flex;
@@ -17,7 +21,15 @@
       color: #ffffff;
       font-weight: 700;
       font-size: 1.5rem;
-      // margin: 0 1.7rem;
+
+      .image {
+        height: 2rem;
+        margin-bottom: 0;
+
+        @include respond(phone) {
+          padding: 0.1rem;
+        }
+      }
 
       @include respond(tab-port) {
         font-size: 1.3rem;
@@ -80,7 +92,6 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 1.5rem;
-    // margin: 0 1.7rem;
 
     @include respond(tab-port) {
       font-size: 1.3rem;
