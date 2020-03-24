@@ -13,10 +13,21 @@ function Faq(props) {
         <>
           <h2> WHAT IS A HELIUM HOTSPOT? WHY SHOULD I WANT ONE? </h2>
           <p>
-            At Emrit, we are forming the largest network of Helium Hotspots to
-            create more reliable and higher scoring devices. Each of our
-            Hotspots will earn a higher percentage of Helium Network Tokens than
-            other, unreliable Hotspots.
+            Helium Hotspots are a way to stay connected anywhere, anytime. The
+            network built upon the Hotspots enables IoT devices to transmit data
+            to their respective end-users. By purchasing a Hotspot, you are
+            directly contributing to building a community of connectivity that
+            opens the world up to innovative technologies and new devices. For
+            example, your Hotspot could be used to transmit important data from
+            a wildfire sensor to fire departments in order to help them fight
+            fires.
+          </p>
+          <p>
+            In addition, as a Hotspot host, you are rewarded Helium tokens for
+            building and securing network coverage. As the network grows,
+            additional tokens can be earned for transferring end-to-end
+            encrypted device data on the network. These tokens are redeemable
+            for cash or can be held onto in your crypto wallet.
           </p>
         </>
       )
