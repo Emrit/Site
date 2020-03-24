@@ -126,7 +126,11 @@ function Slide(props) {
           </Col>
           <Col xs={12} md={12} lg={6} className={styles.col}>
             <div className={styles.Card}>
-              <Carousel activeIndex={indexSecond} onSelect={handleSelectSecond}>
+              <Carousel
+                activeIndex={indexSecond}
+                onSelect={handleSelectSecond}
+                indicators={false}
+              >
                 <Carousel.Item>
                   <div className={styles.imgContainerRight}>
                     <Img
@@ -148,6 +152,12 @@ function Slide(props) {
                       standard Helium radio module, devices can be natively
                       geolocated without the need for power-hungry cellular.
                     </p>
+                  </div>
+                  <div className={styles.footerImageContainer}>
+                    <Img
+                      className={styles.footerImage}
+                      src={require('../../assets/carousel_1/mobilitystats.svg')}
+                    />
                   </div>
                 </Carousel.Item>
 
@@ -172,6 +182,12 @@ function Slide(props) {
                       provides accurate location without power-hungry and
                       expensive GPS or cellular components.
                     </p>
+                  </div>
+                  <div className={styles.footerImageContainer}>
+                    <Img
+                      className={styles.footerImage}
+                      src={require('../../assets/carousel_1/invisileash_navy.svg')}
+                    />
                   </div>
                 </Carousel.Item>
 
@@ -201,6 +217,12 @@ function Slide(props) {
                       real-time view of fill levels extending the level of
                       service they can offer customers.
                     </p>
+                  </div>
+                  <div className={styles.footerImageContainer}>
+                    <Img
+                      src={require('../../assets/carousel_1/nestlestats.svg')}
+                      className={styles.footerImage}
+                    />
                   </div>
                 </Carousel.Item>
               </Carousel>

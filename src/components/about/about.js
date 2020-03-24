@@ -5,7 +5,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 function About(props) {
   return (
-    <div className={styles.container}>
+    <div id="about" className={styles.container}>
       <Container className={styles.fluidContainer} fluid>
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={6} className={styles.col}>
@@ -43,10 +43,19 @@ function About(props) {
               <iframe
                 width="100%"
                 height="300"
-                src="https://www.youtube.com/embed/yiWbWFqLDiE"
+                src="https://www.youtube.com/embed/qx-GghvwV6A"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+              {/* <iframe
+                width="100%"
+                height="300"
+                // src="https://www.youtube.com/embed/yiWbWFqLDiE"
+                src="https://www.youtube.com/watch?v=qx-GghvwV6A"
                 frameborder="0"
                 allow="autoplay;"
-              />
+              /> */}
             </div>
           </Col>
         </Row>

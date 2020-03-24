@@ -46,7 +46,7 @@ class Navi extends React.PureComponent {
           </div>
 
           <div className={styles.right}>
-            <Link to="/about" className={styles.link}>
+            <Link to="/#about" className={styles.link}>
               About
             </Link>
             <Link to="/contact" className={styles.link}>

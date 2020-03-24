@@ -12,6 +12,11 @@ import 'scss/gatstrap.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
 
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#about"]')
+}
+
 class Layout extends React.Component {
   componentDidMount() {
     emergence.init()
@@ -27,7 +32,7 @@ class Layout extends React.Component {
       <div className={styles.container}>
         <Navi title={siteMetadata.title} {...this.props} />
         {children}
-        {/* <Footer title={siteMetadata.title} author={siteMetadata.author} /> */}
+        <Footer />
       </div>
     )
   }

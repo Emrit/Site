@@ -109,5 +109,19 @@
         box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
       }
     }
+
+    .footerImageContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .footerImage {
+        height: 2.5rem;
+
+        @include respond(phone) {
+          height: 2rem;
+        }
+      }
+    }
   }
 }

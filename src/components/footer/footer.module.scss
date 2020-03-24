@@ -1,0 +1,59 @@
+@import '../../scss/mixins';
+@import '../../scss/colors.scss';
+
+.container {
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(90, 190, 137, 1) 0%,
+    rgba(37, 181, 189, 1) 50%,
+    rgba(66, 138, 201, 1) 100%
+  );
+
+  @include respond(tab-port) {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .iconsContainer {
+    display: flex;
+    margin: 0.5rem;
+
+    .footerIcon {
+      height: 1.5rem;
+      margin: 0 1rem;
+
+      @include respond(tab-port) {
+        height: 1.2rem;
+      }
+    }
+  }
+
+  .textContainer {
+    margin: 0.5rem;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+
+      @include respond(tab-port) {
+        font-size: 0.7rem;
+        text-align: center;
+        display: block;
+      }
+
+      &:hover {
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+  }
+}
