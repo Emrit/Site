@@ -33,6 +33,15 @@
       font-weight: 800;
       font-size: 0.7rem;
     }
+
+    .iconSvg {
+      height: 1rem;
+      margin: auto;
+
+      @include respond(phone) {
+        height: 0.5rem;
+      }
+    }
   }
 
   .helium {
@@ -45,6 +54,15 @@
 
     @include respond(phone) {
       min-height: 2.5rem;
+    }
+
+    .iconSvg {
+      height: 1rem;
+      margin: auto;
+
+      @include respond(phone) {
+        height: 0.5rem;
+      }
     }
   }
 
