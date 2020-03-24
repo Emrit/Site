@@ -15,7 +15,6 @@
     }
 
     .carousel {
-      //   background-color: rebeccapurple;
       margin: 0;
 
       h4 {
@@ -52,10 +51,6 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 1rem;
-
-      @include respond(phone) {
-        height: 10rem;
-      }
 
       .headerImage {
         width: 100%;

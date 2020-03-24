@@ -29,6 +29,10 @@
     color: black;
     margin: 1rem 0;
 
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
+
     h2 {
       font-weight: 700;
       font-size: 1.7rem;

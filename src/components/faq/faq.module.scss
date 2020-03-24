@@ -2,12 +2,11 @@
 
 .container {
   color: black;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0) 0%,
-    rgb(255, 255, 255) 100%
-  );
   box-sizing: border-box;
   min-height: 60vh;
+  background-color: #eeeeee;
+  padding: 1rem 0;
+  padding-top: 2rem;
 
   h2 {
     text-align: center;
@@ -45,7 +44,11 @@
     box-shadow: inset 0px -1px 9px 3px rgba(221, 221, 221, 1);
     padding: 2rem;
     border-radius: 1rem;
-    // border: solid #ddd 0.2rem;
+    background-color: #ffffff;
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
 
     h2 {
       font-weight: 700;
@@ -54,7 +57,7 @@
       text-align: center;
 
       @include respond(phone) {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
 
@@ -66,6 +69,7 @@
 
       @include respond(phone) {
         padding: 0 0.2rem;
+        text-align: center;
       }
     }
   }
@@ -94,12 +98,18 @@
       align-items: center;
       display: flex;
       flex-direction: column;
+      background-color: #ffffff;
       cursor: pointer;
 
       .Img {
         margin: 0;
         padding: 0;
         height: 2rem;
+
+        @include respond(phone) {
+          height: 1.5rem;
+          margin-bottom: 0.2rem;
+        }
       }
 
       @include respond(tab-port) {
