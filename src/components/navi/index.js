@@ -68,7 +68,15 @@ class Navi extends React.PureComponent {
           noOverlay={false}
         >
           <div className={styles.menuDropDown}>
-            <Link to="/about" className={styles.link}>
+            <Link
+              to="/#about"
+              onClick={() => {
+                this.setState({
+                  isActive: false,
+                })
+              }}
+              className={styles.link}
+            >
               About
             </Link>
             <Link to="/contact" className={styles.link}>
