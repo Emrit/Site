@@ -4,6 +4,7 @@ import emergence from 'emergence.js'
 import Navi from 'components/navi'
 import Footer from 'components/footer'
 import { siteMetadata } from '../../../gatsby-config'
+import styles from './index.module.scss'
 
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'
@@ -23,7 +24,7 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props
     return (
-      <div style={{ background: '#eee' }}>
+      <div className={styles.container}>
         <Navi title={siteMetadata.title} {...this.props} />
         {children}
         {/* <Footer title={siteMetadata.title} author={siteMetadata.author} /> */}

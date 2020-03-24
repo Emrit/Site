@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from './caseStudy.module.scss'
 import Img from 'react-image'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import Table from './table'
 
 function CaseStudy(props) {
   return (
@@ -96,6 +97,17 @@ function CaseStudy(props) {
               </div>
             </Col>
             <Col xs={12} md={12} lg={1} className={styles.col}></Col>
+          </Row>
+        </Container>
+      </div>
+      <div>
+        <Container fluid>
+          <Row className={styles.row}>
+            <Col xs={12} md={12} lg={1} className={styles.col}></Col>
+            <Col xs={12} md={12} lg={8} className={styles.col}>
+              <Table />
+            </Col>
+            <Col xs={12} md={12} lg={3} className={styles.col}></Col>
           </Row>
         </Container>
       </div>

@@ -120,7 +120,8 @@
           flex: 1;
 
           @include respond(phone) {
-            font-size: 0.5;
+            font-size: 0.7rem;
+            flex: 3;
           }
         }
 

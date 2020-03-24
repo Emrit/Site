@@ -2,7 +2,11 @@
 
 .container {
   color: black;
-  background-color: #eeeeee;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  box-sizing: border-box;
   min-height: 60vh;
 
   h2 {

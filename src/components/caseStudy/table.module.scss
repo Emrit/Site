@@ -1,0 +1,179 @@
+@import '../../scss/mixins';
+
+.container {
+  .text {
+    flex: 4;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    p {
+      font-size: 0.8rem;
+      padding: 0 2rem;
+      margin: 0;
+      color: black;
+
+      @include respond(phone) {
+        padding: 0 0.5rem;
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  .icons {
+    flex: 1;
+    height: 100%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 5rem;
+
+    p {
+      font-weight: 800;
+      font-size: 0.7rem;
+    }
+  }
+
+  .helium {
+    display: flex;
+    flex: 1;
+    min-height: 2rem;
+    color: #ffffff;
+    background-color: #498dcb;
+    max-width: 5rem;
+
+    @include respond(phone) {
+      min-height: 2.5rem;
+    }
+  }
+
+  .fill {
+    min-height: 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .transparentTop {
+    height: 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    background-color: 'transparent';
+    display: flex;
+
+    .text {
+      flex: 4;
+      height: 100%;
+    }
+
+    .icons {
+      flex: 1;
+      height: 100%;
+      color: black;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding-top: 0.8rem;
+      max-width: 5rem;
+
+      p {
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+
+        @include respond(phone) {
+          font-size: 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .helium {
+      flex: 1;
+      height: 100%;
+      color: #ffffff;
+      background-color: #498dcb;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding-top: 0.8rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      max-width: 5rem;
+
+      p {
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+
+        @include respond(phone) {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .transparent {
+    min-height: 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    background-color: 'transparent';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .transparentBottom {
+    height: 2rem;
+    border-radius: 1rem;
+    flex: 1;
+    background-color: 'transparent';
+    display: flex;
+
+    .text {
+      flex: 4;
+      height: 100%;
+    }
+
+    .icons {
+      flex: 1;
+      height: 100%;
+      color: black;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding-top: 0.8rem;
+      max-width: 5rem;
+
+      p {
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .heliumBottom {
+      flex: 1;
+      height: 1rem;
+      color: #ffffff;
+      background-color: #498dcb;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding-top: 0.8rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      max-width: 5rem;
+
+      p {
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
