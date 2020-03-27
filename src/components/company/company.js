@@ -14,25 +14,24 @@ function Company(props) {
           <h2> Adi Arul - Co-founder and CEO</h2>
           <p>
             Aditya (Adi) Arul, a 6th grader at Atlanta International School is
-            set to become an entrepreneur and that too, of the disruptive kind.
-            Emrit, will provide a peer-to-peer wireless network to track and
-            link small devices like dog collars and e-scooters at a
-            significantly lower cost than what wireless telcos offer currently.
+            set to become an entrepreneur and that too of the disruptive kind.
             Adi has been mining cryptocurrencies in his basement at the age of
-            10. Aditya’s strong interest in the project and his interest in
-            investing in blockchain startups evolved into the decision to start
-            his own company. Just before his 2019 summer break began, Adi Arul
-            learned about the Helium Hotspot, a platform anyone can use to earn
-            a new cryptocurrency. The platform runs on a LongFi protocol, which
-            can send data 200 times farther than normal WiFi. Emrit is
-            completely bootstrapped. Adi said he used $5,000 of his own savings
-            (collected by doing chores) and invested it into an early-stage
-            blockchain company in 2018. Adi made a $100,000 return on the
-            investment, which he used to fund Emrit. Adi said“I took a portion
-            of that return to buy hotspots and to bring in a team. I did use
-            $450 of my savings to buy video games. I love to play video games
-            and VR.” Adi , who loves golf and received his black belt in karate
-            at age 9, hopes to expand his company throughout the USA shortly.
+            10. Aditya’s strong interest in mining and his interest in investing
+            in blockchain startups evolved into the decision to start his own
+            company. Adi bootstrapped Emrit. Some of his interests include Golf,
+            Blockchain, VR and video games.
+          </p>
+          <p>
+            <strong>
+              Adi Arul - Atlanta Business Chronicle Top 25 Entrepreneur under 25
+            </strong>
+          </p>
+          <p>
+            <strong> Adi Arul SXSW 2020 speaker invitation</strong>
+          </p>
+
+          <p>
+            <strong> Adi Arul@Metro Atlanta Chamber Grow Council </strong>
           </p>
         </>
       )
@@ -41,30 +40,18 @@ function Company(props) {
         <>
           <h2> Kavitha Palani - President</h2>
           <p>
-            Kavitha is a co-founder and partner in Emrit and 11-11 Ventures.
-            Kavitha takes care of legal, tax compliance, treasury, risk
-            management, and overall administration within Emrit and 11-11
-            Ventures. Prior to this, she was a co-founder and Managing Director
-            of Enrich LLC (Global leader in Oracle Procurement SaaS). She ran
-            Enrich operations and grew it to a global company across North
-            America, Europe and Asia before her exit in early 2016. Enrich is
-            now a Data Intensity Company owned by a private equity firm.
-          </p>
-          <p>
-            Kavitha is actively involved in the community, currently serving as
-            Founder and Director of AK Foundation, a non-profit organization
-            supporting high quality education and mentoring for underprivileged
-            children in India, Africa (Tanzania) and Georgia (USA.)
-          </p>
-          <p>
-            Kavitha’s key strengths are collaboration, delegation, decisiveness,
-            and intuition. She also handles pressure with ease and is a great
-            multi-tasker.
-          </p>
-          <p>
-            Kavitha lives in Atlanta, GA, with her loving husband and two
-            wonderful kids. She loves dancing to Bollywood Music, working out,
-            shopping, and traveling.
+            Prior to Co-founding Emrit, Kavitha was a co-founder and Managing
+            Director of Enrich LLC (Global leader in Oracle Procurement SaaS).
+            She ran Enrich operations and grew it to a global company across
+            North America, Europe, and Asia before her exit in early 2016.
+            Kavitha is also a Managing Partner at 11-11 Ventures, a venture
+            capital firm that has invested in 35 early-stage technology
+            startups. Kavitha is actively involved in the community, currently
+            serving as Founder and Director of AK Foundation, a non-profit
+            organization supporting education for underprivileged children in
+            India, Africa (Tanzania) and Georgia (USA.). Kavitha’s key strengths
+            are collaboration, delegation, decisiveness, and intuition. She also
+            handles pressure with ease and is a great multi-tasker.
           </p>
         </>
       )
@@ -74,40 +61,35 @@ function Company(props) {
           <h2> Randall Pires - Co-founder/CTO & COO</h2>
           <p>
             Since graduating from Georgia Tech with an engineering degree in
-            '07, next 10 years spent working int’l, mostly in Africa. Career
-            started as a project engineer building the largest LNG plant in the
-            world. Afterwards started own WISP company & had internet coverage
-            for 100s of thousands of users across 4 times zones in Africa, from
-            Angola to South Sudan.
-          </p>
-          <p>
-            RESULTS: facilitating innovation discussions among Global 1000
-            executives about the emerging techs of blockchain, AI(AGI/ASI)/DL,
-            Smart Cities, 5G, Big Data, IoT, Autonomous Vehicles as pub
-            transportation, and Affordable internet access for all --> leading
-            to implementation.
+            '07, his next 10 years were spent working internationally, mostly in
+            Africa. His career started as a project engineer building the
+            largest LNG plant in the world. Afterwards Randall started his own
+            Wireless ISP company & had internet coverage for 100s of thousands
+            of users across 4 times zones in Africa, from Angola to South Sudan.
+            After the Civil War relapse in South Sudan he has been focused on
+            blockchain technologies, empowering the individual with access to
+            information (Internet 1.0), and access to Value Exchange (Internet
+            2.0). Randall is an international speaker sharing visions of Society
+            5.0.
           </p>
         </>
       )
     } else if (content === 3) {
       return (
         <>
-          <h2> Kyle Mckinley - Operations Manager</h2>
+          <h2> Arul Murugan - Advisor</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            tincidunt erat et dolor pretium, vitae eleifend tortor fringilla.
-            Nullam pellentesque mauris nibh, non suscipit libero tempor eu. Cras
-            vitae nisl consectetur, posuere mauris eget, ornare nisl. In
-            ultricies, ligula nec lobortis tincidunt, turpis dolor bibendum
-            sapien, quis viverra sem arcu vitae dolor. Maecenas vel enim tellus.
-            Proin quis tortor non velit efficitur hendrerit. Quisque nisi nisi,
-            eleifend vitae turpis sit amet, fringilla egestas metus. Donec
-            ultrices eros at lorem auctor, ac ultricies orci interdum. Sed metus
-            urna, convallis in felis id, maximus vestibulum lorem. Nam bibendum
-            tortor quis nunc iaculis, vel aliquet justo malesuada. Sed vel sem
-            quis est dignissim ornare id sit amet nibh. Praesent dolor arcu,
-            porta at nulla eget, interdum consectetur leo. Mauris viverra
-            placerat velit, ac dictum ante.
+            An entrepreneur turned venture capitalist, Arul Murugan focuses on
+            investing and building category-leading businesses that scale
+            quickly and endure even the most challenging market conditions. His
+            12 years as Founder, CEO, and Chairman of Enrich, an Oracle-based
+            SaaS procurement solution, were critical in forming his philosophy
+            to growth. He brought that philosophy from Enrich to his portfolio
+            of 35 companies in 11-11 Ventures and now Borderless Capital, where
+            he is investing in category-leading companies that have proven
+            business models, scalable revenue and a clear path towards
+            profitability. Arul’s key strengths are business model innovation,
+            economics and Venture investments with strong financial acumen.
           </p>
         </>
       )
@@ -272,7 +254,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/Empty.png')}
+                  src={require('../../assets/arul.jpg')}
                 />
               </div>
             </div>
