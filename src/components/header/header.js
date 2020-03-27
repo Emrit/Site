@@ -9,8 +9,9 @@ function Header(props) {
   return (
     <div className={styles.container}>
       <div className={styles.leftContainer}>
-        <h2>Emrit: Your community's #1 end-to-end Helium solutions partner.</h2>
-        <p> Come join us now and claim your FREE hotspot today!!</p>
+        <h2> Emrit’s Helium Host Program</h2>
+        <h3>Emrit: Your community's #1 end-to-end Helium solutions partner.</h3>
+        <p> Come join us now and claim your FREE hotspot!</p>
         <Link to="/#about">
           <Button className={styles.button}> More Info </Button>
         </Link>

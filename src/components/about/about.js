@@ -35,8 +35,10 @@ function About(props) {
                 earning as long as the hotspot is running with you). We also
                 have referral programs in place. Essentially, these rewards are
                 a ‘thank you’ for using the FREE provided Hotspots which help us
-                achieve our vision of a more connected future, powering the IOT
-                future, with you!
+                achieve our vision of a more connected future,
+                <strong style={{ fontWeight: '600' }}>
+                  powering the IOT future, with you!
+                </strong>
               </p>
             </div>
           </Col>
