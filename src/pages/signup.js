@@ -11,6 +11,7 @@ import {
   InputGroup,
 } from 'react-bootstrap'
 import axios from 'axios'
+import Img from 'react-image'
 import { useLocation } from 'gatsby'
 
 const defaultAddress = {
@@ -80,8 +81,6 @@ function SignupPage(props) {
       event.preventDefault()
       event.stopPropagation()
       submit()
-      //   setValidated(false)
-      //   submit()
     }
   }
 
@@ -245,9 +244,6 @@ function SignupPage(props) {
                 setFinalForms(newFinalForms)
               }}
             />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid longitude.
-            </Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="4" controlId="validationCustom05">
             <Form.Label>Latitude</Form.Label>
@@ -260,9 +256,6 @@ function SignupPage(props) {
                 setFinalForms(newFinalForms)
               }}
             />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid latitude.
-            </Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="4" controlId="validationCustom05">
             <Form.Label>Height/Floor</Form.Label>
@@ -275,18 +268,27 @@ function SignupPage(props) {
                 setFinalForms(newFinalForms)
               }}
             />
-            <Form.Control.Feedback type="invalid">
-              Please provide a valid Height/Floor.
-            </Form.Control.Feedback>
           </Form.Group>
         </Form.Row>
       </div>
     )
   })
 
+  console.log(props)
+
   return (
     <>
-      <div className={styles.header} />
+      <div className={styles.header}>
+        <Img
+          onClick={() => {
+            props.navigate('/')
+          }}
+          src={require('../assets/signup/back.svg')}
+          className={styles.backButton}
+        />
+
+        <Img src={require('../assets/logo-nav.svg')} className={styles.image} />
+      </div>
       <div className={styles.container}>
         <Form
           ref={formValues}
@@ -328,7 +330,8 @@ function SignupPage(props) {
                 <Form.Label>Email</Form.Label>
                 <Form.Control
                   required
-                  type="text"
+                  pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                  type="email"
                   placeholder="Email"
                   onChange={e => setEmail(e.target.value)}
                 />
@@ -482,6 +485,7 @@ function SignupPage(props) {
                 padding: 0,
                 fontSize: '.8rem',
                 color: 'blue',
+                cursor: 'pointer',
               }}
               onClick={() => handleShow()}
             >

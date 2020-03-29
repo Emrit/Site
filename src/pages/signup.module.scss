@@ -14,6 +14,34 @@
     rgba(37, 181, 189, 1) 50%,
     rgba(66, 138, 201, 1) 100%
   );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(phone) {
+    height: 6rem;
+  }
+
+  .backButton {
+    height: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+      height: 2rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .image {
+    height: 2.5rem;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+
+    @include respond(phone) {
+      margin-right: 1rem;
+    }
+  }
 }
 
 .container {

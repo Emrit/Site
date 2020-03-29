@@ -5,6 +5,7 @@ import { Container, Row, Col, Button, Form, Modal } from 'react-bootstrap'
 import axios from 'axios'
 import { useLocation } from 'gatsby'
 import { useForm, useField, splitFormProps } from 'react-form'
+import Img from 'react-image'
 
 async function sendToServer(values) {
   const contact = [values.name, values.email, values.subject, values.comment]
@@ -66,6 +67,11 @@ async function checkValidSubject(subject, instance) {
 async function checkValidEmail(email, instance) {
   if (!email) {
     return 'An email is required'
+  }
+
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  if (!re.test(String(email).toLowerCase())) {
+    return 'Enter a valid email'
   }
 
   return instance.debounce(async () => {
@@ -133,7 +139,12 @@ function Contact(props) {
 
       <div className={styles.labelContainer}>
         <label className={styles.label}>
-          Email: <InputField field="email" validate={checkValidEmail} />
+          Email:
+          <InputField
+            field="email"
+            pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+            validate={checkValidEmail}
+          />
         </label>
       </div>
 
@@ -193,7 +204,20 @@ function ContactPage(props) {
       <Container className={styles.fluidContainer} fluid>
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={12} className={styles.col}>
-            <div className={styles.leftContainer}></div>
+            <div className={styles.leftContainer}>
+              <Img
+                onClick={() => {
+                  props.navigate('/')
+                }}
+                src={require('../assets/signup/back.svg')}
+                className={styles.backButton}
+              />
+
+              <Img
+                src={require('../assets/logo-nav.svg')}
+                className={styles.image}
+              />
+            </div>
             <div className={styles.rightContainer}>
               <Contact
                 handleShow={() => {
