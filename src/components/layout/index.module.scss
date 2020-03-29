@@ -8,9 +8,10 @@
     min-height: 1.8rem;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(134deg, #27284b 0%, #27284b 100%);
+    padding: 0 1rem;
 
     &:hover {
       background: linear-gradient(
@@ -19,6 +20,27 @@
         rgba(37, 181, 189, 1) 50%,
         rgba(66, 138, 201, 1) 100%
       );
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    input {
+      background-color: white;
+      margin: 0.7rem 0;
+      border-radius: 2rem;
+      -webkit-appearance: none;
+      padding: 0.2rem 1rem;
+      outline: none;
+      border: none;
+      font-size: 0.8rem;
+      min-width: 13rem;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
     }
   }
 
@@ -30,7 +52,7 @@
       font-size: 0.7rem;
       font-weight: 800;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
         padding: 1rem 2rem;
         text-align: center;
       }

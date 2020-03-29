@@ -18,12 +18,29 @@ if (typeof window !== 'undefined') {
 }
 
 class Layout extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      search: '',
+    }
+  }
   componentDidMount() {
     emergence.init()
   }
 
   componentDidUpdate() {
     emergence.init()
+  }
+
+  handleSubmit = event => {
+    event.preventDefault()
+    event.stopPropagation()
+    let search = this.state.search
+    search = search.replace(/\s+/g, '-').toLowerCase()
+
+    let link = `http://dashboard.helium.com/d/vHLwU-cZz/hotspot-earnings?orgId=1&refresh=1m&var-hotspot=${search}`
+    window.open(link, '_blank')
   }
 
   render() {
@@ -38,6 +55,25 @@ class Layout extends React.Component {
           >
             <p>Check your hotspot’s earning NOW! Click here to view.</p>
           </a>
+          <form onSubmit={e => this.handleSubmit(e)}>
+            <button
+              onClick={e => this.handleSubmit(e)}
+              type="submit"
+              style={{
+                background: 'transparent',
+                border: 'none',
+                marginRight: 5,
+              }}
+            >
+              <i class="fa fa-search" style={{ color: '#fff' }}></i>
+            </button>
+            <input
+              value={this.state.search}
+              type="text"
+              placeholder="Search Hotspot"
+              onChange={e => this.setState({ search: e.target.value })}
+            />
+          </form>
         </div>
         <Navi title={siteMetadata.title} {...this.props} />
         {children}
