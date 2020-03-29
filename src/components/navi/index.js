@@ -32,6 +32,7 @@ class Navi extends React.PureComponent {
               <Img
                 src={require('../../assets/logo-nav.svg')}
                 className={styles.image}
+                decode={false}
               />
             </Link>
           </div>

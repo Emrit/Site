@@ -16,12 +16,13 @@ function CaseStudy(props) {
             <div className={styles.leftContainer}>
               <h2> Why Helium?</h2>
               <p>
-                {' '}
                 Helium helps companies solve connectivity challenges without
                 expensive cell plans or worrying about building and maintaining
                 wireless infrastructure.
               </p>
-              <Button className={styles.button}> Contact Sales </Button>
+              <a target="_blank" href="https://www.helium.com">
+                <Button className={styles.button}> View More </Button>
+              </a>
             </div>
           </Col>
           <Col xs={12} md={12} lg={4} className={styles.col}></Col>
@@ -34,6 +35,7 @@ function CaseStudy(props) {
             <Col xs={12} md={12} lg={10} className={styles.col}>
               <div className={styles.header}>
                 <Img
+                  decode={false}
                   className={styles.img}
                   src={require('../../assets/techrange.svg')}
                 />
@@ -83,6 +85,7 @@ function CaseStudy(props) {
                 <Img
                   className={styles.img}
                   src={require('../../assets/techpricing.svg')}
+                  decode={false}
                 />
                 <h4> Pricing </h4>
               </div>

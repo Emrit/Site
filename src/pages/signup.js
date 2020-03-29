@@ -287,9 +287,14 @@ function SignupPage(props) {
           }}
           src={require('../assets/signup/back.svg')}
           className={styles.backButton}
+          decode={false}
         />
 
-        <Img src={require('../assets/logo-nav.svg')} className={styles.image} />
+        <Img
+          src={require('../assets/logo-nav.svg')}
+          className={styles.image}
+          decode={false}
+        />
       </div>
       <div className={styles.container}>
         <Form

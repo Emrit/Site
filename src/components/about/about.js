@@ -46,20 +46,12 @@ function About(props) {
             <div className={styles.rightContainer}>
               <iframe
                 width="100%"
-                height="473"
+                height="450"
                 src="https://www.youtube.com/embed/qx-GghvwV6A"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               />
-              {/* <iframe
-                width="100%"
-                height="300"
-                // src="https://www.youtube.com/embed/yiWbWFqLDiE"
-                src="https://www.youtube.com/watch?v=qx-GghvwV6A"
-                frameborder="0"
-                allow="autoplay;"
-              /> */}
             </div>
           </Col>
         </Row>

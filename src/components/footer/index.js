@@ -11,24 +11,28 @@ const Footer = ({ author, title }) => (
         <Img
           src={require('../../assets/footer/github.svg')}
           className={styles.footerIcon}
+          decode={false}
         />
       </a>
       <a href="#">
         <Img
           src={require('../../assets/footer/facebook.svg')}
           className={styles.footerIcon}
+          decode={false}
         />
       </a>
       <a href="#">
         <Img
           src={require('../../assets/footer/twitter.svg')}
           className={styles.footerIcon}
+          decode={false}
         />
       </a>
       <a href="#">
         <Img
           src={require('../../assets/footer/mail.svg')}
           className={styles.footerIcon}
+          decode={false}
         />
       </a>
     </div>

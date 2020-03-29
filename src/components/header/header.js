@@ -20,6 +20,7 @@ function Header(props) {
         <Img
           src={require('../../assets/header/Emrits_White.svg')}
           className={styles.image}
+          decode={false}
         />
       </div>
     </div>

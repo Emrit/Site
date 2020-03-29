@@ -30,24 +30,28 @@ function Table(props) {
           <Img
             src={require('../../assets/Tick.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
       </div>
@@ -59,24 +63,28 @@ function Table(props) {
           <Img
             src={require('../../assets/Tick.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
       </div>
@@ -88,24 +96,28 @@ function Table(props) {
           <Img
             src={require('../../assets/Tick.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/tickBlack.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Question_mark.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
       </div>
@@ -117,24 +129,28 @@ function Table(props) {
           <Img
             src={require('../../assets/Tick.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/TickDark.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
       </div>
@@ -146,24 +162,28 @@ function Table(props) {
           <Img
             src={require('../../assets/Tick.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/Cross.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/tickBlack.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
         <div className={styles.icons}>
           <Img
             src={require('../../assets/N-A.svg')}
             className={styles.iconSvg}
+            decode={false}
           />
         </div>
       </div>

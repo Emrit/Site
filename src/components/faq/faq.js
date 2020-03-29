@@ -220,6 +220,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/What is this copy.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> What is this?</h3>
               </div>
@@ -232,6 +233,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/Why my wifi icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> Why my wifi?</h3>
               </div>
@@ -244,6 +246,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/Installment icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> Installation</h3>
               </div>
@@ -256,6 +259,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/Relocation icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> Relocation</h3>
               </div>
@@ -275,6 +279,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/Security_icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> Security</h3>
               </div>
@@ -287,6 +292,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/Earn icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> Earnings</h3>
               </div>
@@ -299,6 +305,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/Earn more icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> Earning More</h3>
               </div>
@@ -311,6 +318,7 @@ function Faq(props) {
                 <Img
                   src={require('../../assets/More icon.svg')}
                   className={styles.Img}
+                  decode={false}
                 />
                 <h3> More helium info</h3>
               </div>
