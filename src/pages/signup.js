@@ -27,6 +27,7 @@ const defaultAddress = {
 
 function SignupPage(props) {
   const [validated, setValidated] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [first, setFirst] = useState('')
   const [lastName, setlastName] = useState('')
   const [email, setEmail] = useState('')
@@ -93,6 +94,7 @@ function SignupPage(props) {
     const longitudeNew = []
     const latitudeNew = []
     const heightNew = []
+    setLoading(true)
 
     finalForms.map((data, index) => {
       addressNew.push(data.addressLine1)
@@ -137,9 +139,11 @@ function SignupPage(props) {
       )
 
       console.group(data.data, 'data')
+      setLoading(false)
       handleShow2()
     } catch (error) {
       console.log(error, 'error')
+      setLoading(false)
     }
   }
 
@@ -273,8 +277,6 @@ function SignupPage(props) {
       </div>
     )
   })
-
-  console.log(props)
 
   return (
     <>
@@ -493,7 +495,9 @@ function SignupPage(props) {
             </p>
           </Form.Group>
 
-          <Button type="submit">Submit form</Button>
+          <Button disabled={loading} type="submit">
+            {loading ? 'Submitting' : 'Submit form'}
+          </Button>
         </Form>
 
         <Modal
