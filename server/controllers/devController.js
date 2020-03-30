@@ -77,10 +77,13 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
 });
 
 exports.contactSheet = catchAsync(async (req, res, next) => {
+  console.log(process.env.GServiceClientEmail + 'here!');
+  console.log(process.env.GServicePrivateKey);
   await doc.useServiceAccountAuth({
     client_email: process.env.GServiceClientEmail,
     private_key: process.env.GServicePrivateKey
   });
+  console.log('HERE!');
 
   const form = [...req.body.contact];
 
