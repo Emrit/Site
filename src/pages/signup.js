@@ -131,12 +131,9 @@ function SignupPage(props) {
     ]
 
     try {
-      const data = await axios.post(
-        'https://intense-coast-38395.herokuapp.com/api/v1/dev/signupEmrit',
-        {
-          signup,
-        }
-      )
+      const data = await axios.post(process.env.serverURL, {
+        signup,
+      })
 
       console.group(data.data, 'data')
       setLoading(false)
