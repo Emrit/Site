@@ -53,8 +53,8 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
     }
   });
 
-  row[`${createdAt}`] = moment().format('YYYY-MM-DD');
-  row[`${memId}`] = shortId.generate();
+  row[`Created At (EST)`] = moment().format('YYYY-MM-DD');
+  row[`memId`] = shortId.generate();
 
   // console.log(row);
 
@@ -77,13 +77,10 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
 });
 
 exports.contactSheet = catchAsync(async (req, res, next) => {
-  console.log(process.env.GServiceClientEmail + 'here!');
-  console.log(process.env.GServicePrivateKey);
   await doc.useServiceAccountAuth({
     client_email: process.env.GServiceClientEmail,
     private_key: process.env.GServicePrivateKey
   });
-  console.log('HERE!');
 
   const form = [...req.body.contact];
 
@@ -94,8 +91,9 @@ exports.contactSheet = catchAsync(async (req, res, next) => {
     row[`${formHeader[index]}`] = data;
   });
 
-  row[`${createdAt}`] = moment().format('YYYY-MM-DD');
-  row[`${memId}`] = shortId.generate();
+  console.log(moment().format('YYYY-MM-DD'));
+  row[`Created At (EST)`] = moment().format('YYYY-MM-DD');
+  row[`memId`] = shortId.generate();
 
   await doc.loadInfo();
   const sheet = await doc.sheetsByIndex[1];
