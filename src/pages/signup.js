@@ -131,9 +131,12 @@ function SignupPage(props) {
     ]
 
     try {
-      const data = await axios.post(process.env.serverURL, {
-        signup,
-      })
+      const data = await axios.post(
+        process.env.serverURL + '/api/v1/dev/signupEmrit',
+        {
+          signup,
+        }
+      )
 
       console.group(data.data, 'data')
       setLoading(false)
