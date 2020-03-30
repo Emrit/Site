@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-bootstrap",
-  "description": "Simple starter for Gatsby",
-  "version": "2.0.1",
-  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "name": "Emrit",
+  "description": "Emrit Website",
+  "version": "1.0.0",
+  "author": "IDS",
   "dependencies": {
     "axios": "^0.19.2",
     "gatsby": "^2.20.9",
