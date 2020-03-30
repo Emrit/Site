@@ -10,12 +10,9 @@ import Img from 'react-image'
 async function sendToServer(values) {
   const contact = [values.name, values.email, values.subject, values.comment]
   try {
-    const data = await axios.post(
-      process.env.serverURL + '/api/v1/dev/contactEmrit',
-      {
-        contact,
-      }
-    )
+    const data = await axios.post('/api/v1/dev/contactEmrit', {
+      contact,
+    })
 
     console.group(data.data, 'data')
   } catch (error) {

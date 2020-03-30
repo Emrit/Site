@@ -44,9 +44,9 @@ app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
   next();
 });
-
 app.use(compression());
 app.use('/api/v1/dev', devRoutes);
+app.use(express.static(path.join(__dirname, '../public/')));
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
