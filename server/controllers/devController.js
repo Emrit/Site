@@ -78,6 +78,8 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
 
 exports.contactSheet = catchAsync(async (req, res, next) => {
   console.log('reached method!');
+  console.log(process.env.GServiceClientEmail);
+  console.log(process.env.GServicePrivateKey);
   await doc.useServiceAccountAuth({
     client_email: process.env.GServiceClientEmail,
     private_key: process.env.GServicePrivateKey
