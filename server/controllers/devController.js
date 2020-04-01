@@ -80,10 +80,15 @@ exports.contactSheet = catchAsync(async (req, res, next) => {
   console.log('reached method!');
   console.log(process.env.GServiceClientEmail);
   console.log(process.env.GServicePrivateKey);
-  await doc.useServiceAccountAuth({
-    client_email: process.env.GServiceClientEmail,
-    private_key: process.env.GServicePrivateKey
-  });
+  try {
+    await doc.useServiceAccountAuth({
+      client_email: process.env.GServiceClientEmail,
+      private_key: process.env.GServicePrivateKey
+    });
+  } catch (e) {
+    console.log(e);
+    console.log(e.message);
+  }
   console.log('authentication success!');
   const form = [...req.body.contact];
   console.log('form extraction success!');
