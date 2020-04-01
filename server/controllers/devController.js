@@ -77,13 +77,14 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
 });
 
 exports.contactSheet = catchAsync(async (req, res, next) => {
+  console.log('reached method!');
   await doc.useServiceAccountAuth({
     client_email: process.env.GServiceClientEmail,
     private_key: process.env.GServicePrivateKey
   });
-
+  console.log('authentication success!');
   const form = [...req.body.contact];
-
+  console.log('form extraction success!');
   const formHeader = ['First Name', 'Email', 'Subject', 'Comment'];
 
   const row = {};
@@ -94,11 +95,11 @@ exports.contactSheet = catchAsync(async (req, res, next) => {
   console.log(moment().format('YYYY-MM-DD'));
   row[`Created At (EST)`] = moment().format('YYYY-MM-DD');
   row[`memId`] = shortId.generate();
-
+  console.log('row generation success!');
   await doc.loadInfo();
   const sheet = await doc.sheetsByIndex[1];
   await sheet.addRow(row);
-
+  console.log('add success!');
   res.status(201).json({
     status: 'success'
   });
