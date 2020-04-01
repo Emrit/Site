@@ -14,7 +14,7 @@ const createdAt = 'Created At';
 exports.signupSheet = catchAsync(async (req, res, next) => {
   await doc.useServiceAccountAuth({
     client_email: process.env.GServiceClientEmail,
-    private_key: process.env.GServicePrivateKey
+    private_key: process.env.GServicePrivateKey.replace(/\\n/g, '\n')
   });
 
   const form = [...req.body.signup];
@@ -79,11 +79,11 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
 exports.contactSheet = catchAsync(async (req, res, next) => {
   console.log('reached method!');
   console.log(process.env.GServiceClientEmail);
-  console.log(process.env.GServicePrivateKey);
+  console.log(process.env.GServicePrivateKey.replace(/\\n/g, '\n'));
   try {
     await doc.useServiceAccountAuth({
       client_email: process.env.GServiceClientEmail,
-      private_key: process.env.GServicePrivateKey
+      private_key: process.env.GServicePrivateKey.replace(/\\n/g, '\n')
     });
   } catch (e) {
     console.log(e);
