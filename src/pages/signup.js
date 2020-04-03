@@ -334,7 +334,7 @@ function SignupPage(props) {
                 <Form.Label>Email</Form.Label>
                 <Form.Control
                   required
-                  pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                  pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,15}|[0-9]{1,3})(\]?)$"
                   type="email"
                   placeholder="Email"
                   onChange={e => setEmail(e.target.value)}
@@ -407,24 +407,9 @@ function SignupPage(props) {
                 </Form.Control.Feedback>
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} md="4" controlId="validationCustom02">
-                <Form.Label>Address Line 1</Form.Label>
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="Address Line 1"
-                  onChange={e => setAddressLine1(e.target.value)}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please provide an address line
-                </Form.Control.Feedback>
-                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-              </Form.Group>
-
               <Form.Group as={Col} md="4" controlId="validationCustomUsername">
                 <Form.Label>Address Line 2</Form.Label>
                 <Form.Control
-                  required
                   type="text"
                   placeholder="Address Line 2"
                   onChange={e => setAddressLine2(e.target.value)}

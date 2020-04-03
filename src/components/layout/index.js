@@ -51,7 +51,7 @@ class Layout extends React.Component {
           <a
             class="header-top-bar"
             target="_blank"
-            href="http://dashboard.helium.com/d/vHLwU-cZz/hotspot-earnings?orgId=1&refresh=1m"
+            href="http://dashboard.helium.com/d/B_z1R9OZz/blockchain?orgId=1&refresh=1m"
           >
             <p>Check your hotspot’s earning NOW! Click here to view.</p>
           </a>
