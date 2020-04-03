@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Img from 'react-image'
+import { Link } from 'gatsby'
 import { Container, Row, Col, Button, Carousel } from 'react-bootstrap'
 import styles from './slide.module.scss'
 
@@ -54,9 +55,11 @@ function Slide(props) {
                     </h3>
                   </div>
                   <div className={styles.buttonContainer}>
-                    <Button className={styles.button}>
-                      Claim your free hotspot now
-                    </Button>
+                    <Link to="/signup">
+                      <Button className={styles.button}>
+                        Claim your free hotspot now
+                      </Button>
+                    </Link>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -85,9 +88,11 @@ function Slide(props) {
                     </h3>
                   </div>
                   <div className={styles.buttonContainer}>
-                    <Button className={styles.button}>
-                      Claim your free hotspot now
-                    </Button>
+                    <Link to="/signup">
+                      <Button className={styles.button}>
+                        Claim your free hotspot now
+                      </Button>
+                    </Link>
                   </div>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -116,9 +121,11 @@ function Slide(props) {
                     </h3>
                   </div>
                   <div className={styles.buttonContainer}>
-                    <Button className={styles.button}>
-                      Claim your free hotspot now
-                    </Button>
+                    <Link to="/signup">
+                      <Button className={styles.button}>
+                        Claim your free hotspot now
+                      </Button>
+                    </Link>
                   </div>
                 </Carousel.Item>
               </Carousel>

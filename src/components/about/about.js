@@ -36,7 +36,7 @@ function About(props) {
                 have referral programs in place. Essentially, these rewards are
                 a ‘thank you’ for using the FREE provided Hotspots which help us
                 achieve our vision of a more connected future,
-                <strong style={{ fontWeight: '600' }}>
+                <strong style={{ fontWeight: '600', marginLeft: '2px' }}>
                   powering the IOT future, with you!
                 </strong>
               </p>
