@@ -5,7 +5,7 @@ const _ = require('lodash');
 const catchAsync = require('../utils/catchAsync');
 
 const doc = new GoogleSpreadsheet(
-  '16JZKd8J7oRrebWDp_j3SeINQ6BGeRY8pV_wAB1X5Mqc'
+  '1LXWF60egdyno2A6voMP1lOuLeqPDUuhpR_4sSkrmEcA'
 );
 
 const memId = 'MemberId';
