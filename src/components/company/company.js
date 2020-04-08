@@ -11,7 +11,7 @@ function Company(props) {
     if (content === 0) {
       return (
         <>
-          <h2> Adi Arul - Co-founder and CEO</h2>
+          <h2> Adi Arul - Founder and CEO</h2>
           <p>
             Aditya (Adi) Arul, a 6th grader at Atlanta International School is
             set to become an entrepreneur and that too of the disruptive kind.
@@ -49,7 +49,7 @@ function Company(props) {
             startups. Kavitha is actively involved in the community, currently
             serving as Founder and Director of AK Foundation, a non-profit
             organization supporting education for underprivileged children in
-            India, Africa (Tanzania) and Georgia (USA.). Kavitha’s key strengths
+            India, Africa (Tanzania) and Georgia (USA). Kavitha’s key strengths
             are collaboration, delegation, decisiveness, and intuition. She also
             handles pressure with ease and is a great multi-tasker.
           </p>
@@ -58,7 +58,7 @@ function Company(props) {
     } else if (content === 2) {
       return (
         <>
-          <h2> Randall Pires - Co-founder/CTO & COO</h2>
+          <h2> Randall Pires - Co-founder, CTO/COO</h2>
           <p>
             Since graduating from Georgia Tech with an engineering degree in
             '07, his next 10 years were spent working internationally, mostly in
@@ -208,7 +208,7 @@ function Company(props) {
 
   return (
     <div className={styles.container}>
-      <h2> About Us </h2>
+      <h2> Meet the Emrit Team </h2>
       <Container className={styles.fluidContainer} fluid>
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={2} className={styles.col}>
@@ -221,7 +221,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/CEO.jpg')}
+                  src={require('../../assets/adi.jpg')}
                 />
               </div>
               <div
@@ -243,7 +243,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/Randall_Pires.jpg')}
+                  src={require('../../assets/randall.jpg')}
                 />
               </div>
               <div

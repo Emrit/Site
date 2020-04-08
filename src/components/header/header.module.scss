@@ -46,7 +46,9 @@
     @include respond(phone) {
       margin-left: 0;
     }
-
+    .subHeader{
+      font-size: 25px;
+    }
     h2 {
       font-weight: 700;
       font-size: 4rem;

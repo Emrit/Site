@@ -13,7 +13,18 @@
     @include respond(phone) {
       padding: 1rem 0.5rem;
     }
-
+    h4{
+      p{
+        font-weight: 300;
+        font-size: 0.75rem;
+      }
+    }
+    .divider{
+      background-image: linear-gradient(to right, #55bd8d , #32a1c3);
+      height: 10px;
+      margin: 50px 0 50px 0;
+      border-radius: 3px;
+    }
     .carousel {
       margin: 0;
 
@@ -114,7 +125,7 @@
         color: white;
         font-weight: 600;
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 1.2rem;
         -webkit-box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
         -moz-box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
         box-shadow: 10px 10px 20px -10px rgba(88, 190, 138, 0.72);
@@ -133,6 +144,14 @@
           height: 2rem;
         }
       }
+    }
+  }
+}
+
+@media (min-width:992px){
+  .container {
+    .Card {
+      height: 700px !important;
     }
   }
 }

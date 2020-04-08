@@ -7,7 +7,7 @@ import Faq from 'components/faq/faq'
 import Company from 'components/company/company'
 import CaseStudy from 'components/caseStudy/caseStudy'
 
-const IndePage = ({ data, location }) => {
+const IndexPage = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Header />
@@ -19,4 +19,4 @@ const IndePage = ({ data, location }) => {
   )
 }
 
-export default IndePage
+export default IndexPage

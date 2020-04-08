@@ -23,46 +23,43 @@ function Slide(props) {
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={6} className={styles.col}>
             <div className={styles.Card}>
-              <Carousel
+              {/* <Carousel
                 activeIndex={index}
                 onSelect={handleSelect}
                 indicators={false}
                 className={styles.carousel}
-              >
-                <Carousel.Item>
-                  <h4>
-                    Emrit's Host Kit
-                    <span className={styles.span}>
-                      (Waitlist For May Batch)
-                    </span>
-                  </h4>
-                  <div className={styles.imgContainer}>
-                    <Img
-                      src={require('../../assets/carousel_1/Helium_hotspot.png')}
-                      className={styles.headerImage}
-                    />
-                  </div>
-                  <div className={styles.content}>
-                    <h3 className={styles.list}>
-                      <ul>
-                        <li>
-                          Hotspot device (1 hotspot per installation address)
-                        </li>
-                        <li>Power cable</li>
-                        <li>1.2dBi antenna</li>
-                        <li> Free merch</li>
-                      </ul>
-                    </h3>
-                  </div>
-                  <div className={styles.buttonContainer}>
-                    <Link to="/signup">
-                      <Button className={styles.button}>
-                        Claim your free hotspot now
-                      </Button>
-                    </Link>
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
+              > */}
+              {/* <Carousel.Item> */}
+              <h4>
+                Emrit's Host Kit
+                <p className={styles.span}>(Waitlist For May Batch)</p>
+              </h4>
+              <div className={styles.imgContainer}>
+                <Img
+                  src={require('../../assets/carousel_1/Helium_hotspot.png')}
+                  className={styles.headerImage}
+                />
+              </div>
+              <div className={styles.content}>
+                <h3 className={styles.list}>
+                  <ul style={{ listStyle: 'none' }}>
+                    <li>Hotspot device (1 hotspot per installation address)</li>
+                    <li>Power cable</li>
+                    <li>1.2dBi antenna</li>
+                    <li> Free merch</li>
+                  </ul>
+                  <div className={styles.divider}></div>
+                </h3>
+              </div>
+              <div className={styles.buttonContainer}>
+                <Link to="/signup">
+                  <Button className={styles.button}>
+                    Claim your free hotspot now
+                  </Button>
+                </Link>
+              </div>
+              {/* </Carousel.Item> */}
+              {/* <Carousel.Item>
                   <h4>
                     Emrit's Host Kit
                     <span className={styles.span}>
@@ -127,8 +124,8 @@ function Slide(props) {
                       </Button>
                     </Link>
                   </div>
-                </Carousel.Item>
-              </Carousel>
+                </Carousel.Item> */}
+              {/* </Carousel> */}
             </div>
           </Col>
           <Col xs={12} md={12} lg={6} className={styles.col}>
@@ -139,6 +136,7 @@ function Slide(props) {
                 indicators={false}
               >
                 <Carousel.Item>
+                  <h4>Business Use Cases</h4>
                   <div className={styles.imgContainerRight}>
                     <Img
                       src={require('../../assets/carousel_1/Bicycle.png')}
@@ -169,6 +167,7 @@ function Slide(props) {
                 </Carousel.Item>
 
                 <Carousel.Item>
+                  <h4>Business Use Cases</h4>
                   <div className={styles.imgContainerRight}>
                     <Img
                       src={require('../../assets/carousel_1/dog.png')}
@@ -199,6 +198,7 @@ function Slide(props) {
                 </Carousel.Item>
 
                 <Carousel.Item>
+                  <h4>Business Use Cases</h4>
                   <div className={styles.imgContainerRight}>
                     <Img
                       src={require('../../assets/carousel_1/Low_stock.png')}

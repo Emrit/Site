@@ -13,14 +13,13 @@ function Faq(props) {
         <>
           <h2> WHAT IS A HELIUM HOTSPOT? WHY SHOULD I WANT ONE? </h2>
           <p>
-            Helium Hotspots are a way to stay connected anywhere, anytime. The
-            network built upon the Hotspots enables IoT devices to transmit data
-            to their respective end-users. By purchasing a Hotspot, you are
-            directly contributing to building a community of connectivity that
-            opens the world up to innovative technologies and new devices. For
-            example, your Hotspot could be used to transmit important data from
-            a wildfire sensor to fire departments in order to help them fight
-            fires.
+            The Helium network with coverage provided by the Hotspots enables
+            IoT devices to transmit data to their respective end-users. By
+            hosting an Emrit Hotspot, you are directly contributing to building
+            a community of connectivity that opens the world up to innovative
+            technologies and new devices. For example, your Emrit Hotspot could
+            be used to transmit important data from a wildfire sensor to fire
+            departments in order to help them fight fires.
           </p>
           <p>
             In addition, as a Hotspot host, you are rewarded Helium tokens for
@@ -37,16 +36,22 @@ function Faq(props) {
           <h2> WHY DOES THE HOTSPOT NEED MY WIFI NETWORK? </h2>
           <p>
             Connecting to the internet via WiFi or Ethernet is essential because
-            the connection is used to provide backhaul to the Hotspot for
-            blockchain peer-to-peer and LongFi networking. LongFi networking
-            utilizes radio waves to enable low-bandwidth IoT devices to connect
-            to the internet at ranges 200X that of regular WiFi. Essentially,
-            the Hotspot acts as an extension of your WiFi to these low bandwidth
-            IoT devices. The Hotspots use very little data and energy which
-            means that your internet connection won’t slow down, and your
-            electricity bill won’t skyrocket. Security is Helium’s highest
-            priority and, as a result, they are constantly working to maintain
-            and improve all aspects of the network’s security.
+            the connection is used to provide a data transfer backhaul from the
+            Hotspot to the Helium blockchain in the cloud via end-to-end
+            encrypted peer-to-peer, and LongFi networking. LongFi networking
+            utilizes long radio waves to enable low-bandwidth IoT devices to
+            connect to the internet at ranges 200X that of regular WiFi.
+            Essentially, the Hotspot acts as an extension of your WiFi to these
+            low bandwidth IoT devices on a different radio channel.{' '}
+          </p>
+
+          <p>
+            The Hotspots use very little data (1-5 kb per message) and energy
+            (@peak&#60;5W = less than an Ikea LED lightbulb) which means you
+            won’t even notice it on your network, or your energy bill. Security
+            is Helium’s highest priority and, as a result, they are constantly
+            working to maintain and improve all aspects of the network’s
+            security.
           </p>
         </>
       )
@@ -60,15 +65,17 @@ function Faq(props) {
             Hotspot that will be shipped directly to you. In order to provide
             the strongest coverage, you should aim to set your Hotspot up as
             high as possible overlooking wide-open spaces. Please be aware that
-            large buildings and/or metallic nets positioned in front of the
-            hotspot may weaken its coverage capabilities.
+            large buildings and/or metallic nets (mosquito screens) positioned
+            in front of the hotspot may weaken its coverage capabilities.
           </p>
+
           <p>
             So, besides completing the order form with your correct information,
             what else do you need to do? Helium Hotspots just need to be plugged
             into a power source and be connected to WiFi or plugged into an
-            Ethernet port. Once plugged in, you’ll be a part of the network and
-            start earning right away!
+            Ethernet port. Once plugged in and the blockchain network
+            synchronizes, you’ll be a part of the network and can start earning
+            right away!
           </p>
         </>
       )
@@ -77,17 +84,18 @@ function Faq(props) {
         <>
           <h2> WHAT IF I MOVE?</h2>
           <p>
-            Devices are uniquely pinned to their location in order to uphold
-            network validity and integrity. Therefore, there is no way to change
-            the pinned location remotely. If a host needs to move the Hotspot to
-            a new address, Emrit will provide a return shipping label for the
-            original Hotspot and ship a new Hotspot with your updated address.
-            Moving devices within a home, say from one window to another, is not
-            a problem. Feel free to try to optimize your earning. Your Hotspot
-            should be positioned to best suit your needs and unique geographical
-            situation. It may take time for you to fully optimize your Hotspot’s
-            earning potential; however, don’t be discouraged as there are plenty
-            of resources available to learn how to best position your Hotspot.
+            Devices are uniquely GPS pinned to their location in order to uphold
+            network validity and integrity via Proof-of-Coverage challenges.
+            Therefore, there is no way to change the pinned location remotely.
+            If a host needs to move the Hotspot to a new address, Emrit will
+            provide a return shipping label for the original Hotspot and ship a
+            new Hotspot with your updated address. Moving devices within a home,
+            say from one window to another, is not a problem. Feel free to try
+            to optimize your earning. Your Hotspot should be positioned to best
+            suit your needs and unique geographical situation. It may take time
+            for you to fully optimize your Hotspot’s earning potential; however,
+            don’t be discouraged as there are plenty of resources available to
+            learn how to best position your Hotspot.
           </p>
         </>
       )
@@ -96,12 +104,14 @@ function Faq(props) {
         <>
           <h2> HOW SECURE IS THIS DEVICE ON MY NETWORK? </h2>
           <p>
+            End-to-end encryption is secure on many layers. The internet
+            connection that you provide the Hotspot is only used to connect your
+            device to the Helium blockchain in the cloud, and without access to
+            other devices on your network.
+          </p>
+          <p>In addition, each hotspot:</p>
+          <p>
             <ul>
-              <li>
-                Very secure. The internet connection that you provide the
-                Hotspot is only used to connect your device to the Helium
-                blockchain in the cloud. In addition, each hotspot:
-              </li>
               <li>Is hardware secured with encryption at the chip level.</li>
               <li>
                 Only requires one port open in both directions which minimizes
@@ -132,19 +142,21 @@ function Faq(props) {
             Being an early adopter gives you access to monetization through the
             building and maintaining of the network. As the network is being
             built, Helium Network Tokens (HNT) will be allocated to Hotspot
-            hosts for building and securing network coverage. Essentially, this
-            is a way to thank those who got in early and helped materialize
-            #ThePeoplesNetwork.
+            hosts for building, securing, and proving network coverage.
+            Essentially, this is a way to continuously thank those who got in
+            early and continue to help materialize #ThePeoplesNetwork.
           </p>
           <p>
             As the network grows and more Hotspots are added, you can also earn
-            more HNT for transferring end-to-end encrypted device data on the
-            network. HNT is your reward for hosting and being an active,
+            more HNT for transferring end-to-end encrypted IoT device data on
+            the network. HNT is your reward for hosting and being an active,
             valuable participant in the Helium Network. Operators of devices and
             sensors on the Helium Network will require HNT to send encrypted
             data across the network, thereby creating intrinsic value for each
-            token. In addition, there are many ways to boost your earning
-            capabilities.
+            token. Since connectivity is charged at a fixed price (US$0.00001)
+            per packet (24 byte payload), companies can easily calculate total
+            costs based on the number of devices and how often they send data.
+            In addition, there are many ways to boost your earning capabilities.
           </p>
         </>
       )
@@ -161,22 +173,30 @@ function Faq(props) {
             or anyone to join the Emrit program. By referring others, you’ll
             receive additional HNT and increase the value of the network as a
             whole. A second way is to optimize your Hotspot by moving it into
-            higher, clearer spaces. Finally, Hotspot upgrade kits will soon
-            become available to hosts as a way to supercharge their devices.
-            Add-ons like antenna upgrades will enable your Hotspot to have a
-            stronger and farther reach which equates to more HNT being mined.
+            higher, clearer spaces. Finally, Emrit Hotspot upgrade kits will
+            soon become available to hosts as a way to supercharge their
+            devices. Add-ons like antenna upgrades will enable your Hotspot to
+            have a stronger and farther reach which equates to more HNT being
+            mined.
           </p>
         </>
       )
     } else if (content === 7) {
       return (
         <>
+          <h2>CLICK THE FOLLOWING LINKS TO LEARN MORE ABOUT HELIUM</h2>
           <p>
-            Website: Helium.com | Earnings: Dashboard.Helium.com | Map:
-            Network.Helium.com
+            <strong>Website:</strong>{' '}
+            <a href="https://www.helium.com/">Helium.com</a> |{' '}
+            <strong>Earnings:</strong>{' '}
+            <a href="http://dashboard.helium.com/d/B_z1R9OZz/blockchain?orgId=1&refresh=1m">
+              Dashboard.Helium.com
+            </a>{' '}
+            | <strong>Map:</strong>
+            <a href="https://network.helium.com/coverage">Network.Helium.com</a>
           </p>
           <p>
-            For Developers:
+            <strong>For Developers:</strong>
             <a href="https://developer.helium.com/" target="__blank">
               {' '}
               https://developer.helium.com/{' '}
@@ -198,6 +218,12 @@ function Faq(props) {
                 wireless protocol
               </li>
             </ul>
+          </p>
+          <p>
+            For<strong> Business</strong>:{' '}
+            <a href="https://www.helium.com/business">
+              "Connectivity Without Cost & Complexity"
+            </a>
           </p>
         </>
       )

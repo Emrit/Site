@@ -10,32 +10,36 @@ function About(props) {
         <Row className={styles.row}>
           <Col xs={12} md={12} lg={6} className={styles.col}>
             <div className={styles.leftContainer}>
-              <h2> Adopt a FREE Hotspot</h2>
+              <h2> What is Emrit?</h2>
               <p>
-                At Emrit, we are on a mission to create the largest network of
-                Helium Hotspots, cultivating a community of advanced operators
-                and users, in order for Emrit hotspots to rise to the top of the
-                Helium community. #teamemrit
+                Emrit is an emerging internet technology company that builds and
+                manages a global peer to peer wireless IoT sensors network by
+                using Helium hotspots for coverage and LoRaWAN protocol for
+                connectivity. This network is a secure and cost effective way
+                for low power Internet of Things devices to send data to and
+                from the internet. At Emrit, we are on a mission to create the
+                largest network of Helium Hotspots, cultivating a community of
+                advanced operators and usersWith your help, we can expand
+                #ThePeoplesNetwork across the globe
               </p>
               <p>
-                With your help, we can expand #ThePeoplesNetwork across the
-                globe. Our network is forming the basis of LoRaWAN IoT
-                capabilities saving everyone immense sums of money and
-                propelling our society forward in new and exciting ways. As the
-                largest distributor of Helium Hotspots, our hope at Emrit is to
-                be able to have the most optimized contributing hotspots, as
-                well as be the go to co-developing partner with Helium for the
+                Our network is forming the basis of LoRaWAN IoT capabilities
+                saving everyone immense sums of money and propelling our society
+                forward in new and exciting ways. As the largest distributor and
+                owner, operator of Helium Hotspots, our hope at Emrit is to be
+                able to have the most optimized contributing hotspots, as well
+                as be the go-to co-developing partner with Helium for the
                 community.
               </p>
               <p>
                 To thank you for your adoption, we would like to reward you with
-                a FREE hotspot (one per street address, 300 meters apart
-                physically), FREE shipping (within USA/CAN), 100 HNT tokens for
-                activation, and ongoing REVENUE SHARE (20% if the Hotspot’s
-                earning as long as the hotspot is running with you). We also
-                have referral programs in place. Essentially, these rewards are
-                a ‘thank you’ for using the FREE provided Hotspots which help us
-                achieve our vision of a more connected future,
+                a FREE hotspot (one per street address, 300 meters apart), FREE
+                shipping (within USA/CAN), 100 HNT tokens for activation, and
+                ongoing REVENUE SHARE (15% if the Hotspot’s earning as long as
+                the hotspot is running with you). We also have referral programs
+                in place. Essentially, these rewards are a ‘thank you’ for using
+                the FREE provided Hotspots which help us achieve our vision of a
+                more connected future,
                 <strong style={{ fontWeight: '600', marginLeft: '2px' }}>
                   powering the IOT future, with you!
                 </strong>

@@ -2,10 +2,10 @@
 
 .container {
   color: black;
-  margin-top: 5rem;
+  padding-top: 8rem;
   box-sizing: border-box;
   min-height: 60vh;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 
   @include respond(tab-port) {
     margin-bottom: 1.5rem;
@@ -64,7 +64,7 @@
   }
 
   .rightContainer {
-    margin: 2rem 0;
+    margin: 4rem 0;
     flex: 1;
     display: flex;
     justify-content: center;
