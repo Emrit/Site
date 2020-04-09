@@ -278,7 +278,7 @@ function Company(props) {
                   setContent(5)
                 }}
               >
-                <h3> Earnings</h3>
+                <h3> How to Earn</h3>
               </div>
               <div
                 className={styles.box}
@@ -286,7 +286,7 @@ function Company(props) {
                   setContent(6)
                 }}
               >
-                <h3> Earning More</h3>
+                <h3> How to Earn more</h3>
               </div>
               <div
                 className={styles.box}
@@ -294,7 +294,7 @@ function Company(props) {
                   setContent(7)
                 }}
               >
-                <h3> More helium info</h3>
+                <h3> Learn more about Helium</h3>
               </div>
             </div> */}
           </Col>
