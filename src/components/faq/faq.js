@@ -320,7 +320,7 @@ function Faq(props) {
                   className={styles.Img}
                   decode={false}
                 />
-                <h3> Earnings</h3>
+                <h3> How to Earn</h3>
               </div>
               <div
                 className={styles.box}
@@ -333,7 +333,7 @@ function Faq(props) {
                   className={styles.Img}
                   decode={false}
                 />
-                <h3> Earning More</h3>
+                <h3> How to Earn more</h3>
               </div>
               <div
                 className={styles.box}
@@ -346,7 +346,7 @@ function Faq(props) {
                   className={styles.Img}
                   decode={false}
                 />
-                <h3> More helium info</h3>
+                <h3> Learn more about Helium</h3>
               </div>
             </div>
           </Col>
