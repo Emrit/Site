@@ -21,17 +21,26 @@ function Company(props) {
             company. Adi bootstrapped Emrit. Some of his interests include Golf,
             Blockchain, VR and video games.
           </p>
+
           <p>
-            <strong>
-              Adi Arul - Atlanta Business Chronicle Top 25 Entrepreneur under 25
-            </strong>
+            <a href="https://www.americaninno.com/atlanta/inno-insights/atlanta-innos-25-under-25-2/">
+              <strong>
+                Adi Arul - Atlanta Business Chronicle Top 25 Entrepreneur under
+                25
+              </strong>
+            </a>
           </p>
           <p>
-            <strong> Adi Arul SXSW 2020 speaker invitation</strong>
+            <a href="https://schedule.sxsw.com/2020/events/PP104922">
+              {' '}
+              <strong> Adi Arul SXSW 2020 speaker invitation</strong>
+            </a>
           </p>
 
           <p>
-            <strong> Adi Arul@Metro Atlanta Chamber Grow Council </strong>
+            <a href="https://www.linkedin.com/posts/cynthiagcurry_growatlanta-entrepreneurkids-activity-6569956885519233024-i-jd">
+              <strong> Adi Arul@Metro Atlanta Chamber Grow Council </strong>
+            </a>
           </p>
         </>
       )
