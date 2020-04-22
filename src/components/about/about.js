@@ -19,8 +19,8 @@ function About(props) {
                 for low power Internet of Things devices to send data to and
                 from the internet. At Emrit, we are on a mission to create the
                 largest network of Helium Hotspots, cultivating a community of
-                advanced operators and usersWith your help, we can expand
-                #ThePeoplesNetwork across the globe
+                advanced operators and users. With your help, we can expand
+                #ThePeoplesNetwork across the globe.
               </p>
               <p>
                 Our network is forming the basis of LoRaWAN IoT capabilities
