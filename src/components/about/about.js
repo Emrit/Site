@@ -35,7 +35,7 @@ function About(props) {
                 To thank you for your adoption, we would like to reward you with
                 a FREE hotspot (one per street address, 300 meters apart), FREE
                 shipping (within USA/CAN), 100 HNT tokens for activation, and
-                ongoing REVENUE SHARE (15% if the Hotspot’s earning as long as
+                ongoing REVENUE SHARE (15% of the Hotspot’s earning as long as
                 the hotspot is running with you). We also have referral programs
                 in place. Essentially, these rewards are a ‘thank you’ for using
                 the FREE provided Hotspots which help us achieve our vision of a
