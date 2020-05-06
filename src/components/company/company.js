@@ -228,7 +228,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/adi_roundedsquare.jpg')}
+                  src={require('../../assets/adi_roundedsquare.png')}
                 />
               </div>
               <div
@@ -239,7 +239,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/kavitha_roundedsquare.jpg')}
+                  src={require('../../assets/kavitha_roundedsquare.png')}
                 />
               </div>
               <div
@@ -250,7 +250,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/randall_roundedsquare.jpg')}
+                  src={require('../../assets/randall_roundedsquare.png')}
                 />
               </div>
               <div
@@ -261,7 +261,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/arul_roundedsquare.jpg')}
+                  src={require('../../assets/arul_roundedsquare.png')}
                 />
               </div>
             </div>
