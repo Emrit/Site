@@ -32,6 +32,7 @@ function SignupPage(props) {
   const [lastName, setlastName] = useState('')
   const [email, setEmail] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
+  const [referralNumber, setReferralNumber] = useState('')
   const [installs, setInstalls] = useState(0)
   const [finalShippingAdresses, setFinalShippingAdresses] = useState([0])
   const [addressLine1, setAddressLine1] = useState('')
@@ -112,6 +113,7 @@ function SignupPage(props) {
       lastName,
       email,
       phoneNumber,
+      referralNumber,
       installs,
       shippingAddress,
       addressLine1,
@@ -384,6 +386,18 @@ function SignupPage(props) {
                 />
                 <Form.Control.Feedback type="invalid">
                   Please provide the number of installations.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} md="4" controlId="validationCustom03">
+                <Form.Label>Referral</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Referral"
+                  required
+                  onChange={e => setReferralNumber(e.target.value)}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please provide a valid referral number
                 </Form.Control.Feedback>
               </Form.Group>
             </Form.Row>
