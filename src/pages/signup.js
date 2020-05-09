@@ -389,7 +389,7 @@ function SignupPage(props) {
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="4" controlId="validationCustom03">
-                <Form.Label>Referral</Form.Label>
+                <Form.Label>Referred by</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="Referral"
