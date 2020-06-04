@@ -32,7 +32,7 @@ function Slide(props) {
               {/* <Carousel.Item> */}
               <h4>
                 Emrit's Host Kit
-                <p className={styles.span}>(Waitlist For May Batch)</p>
+                <p className={styles.span}>(Waitlist For July Batch)</p>
               </h4>
               <div className={styles.imgContainer}>
                 <Img
