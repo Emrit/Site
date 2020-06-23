@@ -23,14 +23,16 @@ function Dashboard(props) {
           decode={false}
         />
       </div>
-
-      <div className={styles.container}>
-        <iframe
-          src="https://datastudio.google.com/embed/reporting/1ApX9g_WAETgQ9AAnbMDgGZAOUIs97WwR/page/wWBTB"
-          style={{ width: '100%', height: '100vh', border: '0' }}
-          allowfullscreen
-        ></iframe>
-      </div>
+      <iframe
+        src="https://datastudio.google.com/embed/reporting/1ApX9g_WAETgQ9AAnbMDgGZAOUIs97WwR/page/wWBTB"
+        style={{
+          width: '100%',
+          height: '150vh',
+          border: '0',
+          marginTop: '-3rem',
+        }}
+        allowfullscreen
+      ></iframe>
     </>
   )
 }

@@ -187,11 +187,11 @@ function SignupPage(props) {
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-            <Form.Label>State</Form.Label>
+            <Form.Label>County/state/region</Form.Label>
             <Form.Control
               required
               type="text"
-              placeholder="State"
+              placeholder="County/state/region"
               onChange={e => {
                 const newFinalForms = [...finalForms]
                 newFinalForms[index].state = e.target.value
@@ -393,7 +393,6 @@ function SignupPage(props) {
                 <Form.Control
                   type="text"
                   placeholder="Referral"
-                  required
                   onChange={e => setReferralNumber(e.target.value)}
                 />
                 <Form.Control.Feedback type="invalid">
@@ -451,11 +450,11 @@ function SignupPage(props) {
               </Form.Group>
 
               <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-                <Form.Label>State</Form.Label>
+                <Form.Label>County/state/region</Form.Label>
                 <Form.Control
                   required
                   type="text"
-                  placeholder="State"
+                  placeholder="County/state/region"
                   onChange={e => setState(e.target.value)}
                 />
               </Form.Group>
