@@ -205,10 +205,10 @@ function SignupPage(props) {
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} md="4" controlId="validationCustom03">
-            <Form.Label>Zip Code</Form.Label>
+            <Form.Label>Zip Code / Postcode</Form.Label>
             <Form.Control
               type="text"
-              placeholder="zipCode"
+              placeholder="Zip Code / Postcode"
               required
               onChange={e => {
                 const newFinalForms = [...finalForms]
@@ -237,7 +237,7 @@ function SignupPage(props) {
             </Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="4" controlId="validationCustom05">
-            <Form.Label>Longitude</Form.Label>
+            <Form.Label>Longitude(optional)</Form.Label>
             <Form.Control
               type="text"
               placeholder="Longitude"
@@ -249,7 +249,7 @@ function SignupPage(props) {
             />
           </Form.Group>
           <Form.Group as={Col} md="4" controlId="validationCustom05">
-            <Form.Label>Latitude</Form.Label>
+            <Form.Label>Latitude (optional)</Form.Label>
             <Form.Control
               type="text"
               placeholder="Latitude"
@@ -440,11 +440,11 @@ function SignupPage(props) {
               </Form.Group>
 
               <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-                <Form.Label>Zip Code</Form.Label>
+                <Form.Label>Zip Code / Postcode</Form.Label>
                 <Form.Control
                   required
                   type="text"
-                  placeholder="Zip Code"
+                  placeholder="Zip Code / Postcode"
                   onChange={e => setZipCode(e.target.value)}
                 />
               </Form.Group>
