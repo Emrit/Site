@@ -210,6 +210,20 @@ function Company(props) {
           </p>
         </>
       )
+    } else if (content === 8) {
+      return (
+        <>
+          <h2> Kostandin Gjini</h2>
+          <p></p>
+        </>
+      )
+    } else if (content === 9) {
+      return (
+        <>
+          <h2> Simon Huang</h2>
+          <p></p>
+        </>
+      )
     }
   }
 
@@ -270,6 +284,30 @@ function Company(props) {
             <div className={styles.leftContainer}>{renderContent()}</div>
           </Col>
           <Col xs={12} md={12} lg={2} className={styles.col}>
+            <div className={styles.rightContainer}>
+              <div
+                className={styles.box}
+                onClick={() => {
+                  setContent(8)
+                }}
+              >
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/Kostandin.png')}
+                />
+              </div>
+              <div
+                className={styles.box}
+                onClick={() => {
+                  setContent(9)
+                }}
+              >
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/Simon.png')}
+                />
+              </div>
+            </div>
             {/* <div className={styles.rightContainer}>
               <div
                 className={styles.box}
