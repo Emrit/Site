@@ -391,6 +391,7 @@ function SignupPage(props) {
               <Form.Group as={Col} md="4" controlId="validationCustom03">
                 <Form.Label>Referred by</Form.Label>
                 <Form.Control
+                  name="referral"
                   type="text"
                   placeholder="Referral"
                   onChange={e => setReferralNumber(e.target.value)}

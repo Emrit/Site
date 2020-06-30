@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default class HTML extends React.Component {
   render() {
     return (
@@ -29,6 +28,7 @@ export default class HTML extends React.Component {
             async
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           />
+          <script async src="referral.js" />
         </body>
       </html>
     )
