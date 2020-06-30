@@ -395,6 +395,7 @@ function SignupPage(props) {
                   type="text"
                   placeholder="Referral"
                   onChange={e => setReferralNumber(e.target.value)}
+                  value=""
                 />
                 <Form.Control.Feedback type="invalid">
                   Please provide a valid referral number
