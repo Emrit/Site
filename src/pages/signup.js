@@ -388,7 +388,7 @@ function SignupPage(props) {
                   Please provide the number of installations.
                 </Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} md="4" controlId="validationCustom03">
+              <Form.Group as={Col} md="4" controlId="referral">
                 <Form.Label>Referred by</Form.Label>
                 <Form.Control
                   name="referral"

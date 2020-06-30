@@ -28,7 +28,7 @@ export default class HTML extends React.Component {
             async
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           />
-          <script async src="referral.js" />
+          <script src="referral.js" />
         </body>
       </html>
     )
