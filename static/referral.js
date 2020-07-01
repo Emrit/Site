@@ -21,23 +21,30 @@ function getCookie(cname) {
   return ''
 }
 
-/* get the referral variable from the url if it exists and set it to a variable named ref */
-const urlParams = new URLSearchParams(window.location.search)
-const ref = urlParams.get('referral')
+var urlParams = ''
+var ref = ''
+var referral = ''
+var input = ''
 
-/* if ref variable is not null set it as a cookie named ref. This will overwrite existing cookie if the variable exists and set the cookie to expire in 30 days */
-if (ref != null) {
-  setCookie('ref', ref, 30)
-}
+setInterval(function() {
+  urlParams = new URLSearchParams(window.location.search)
+  ref = urlParams.get('referral')
 
-/* set a variable named referral to the value from the cookie if the cookie existes and set a variable named input that matches the id of the input field from your signup. This should be changed to match the id from your form. */
-var referral = getCookie('ref')
-var input = document.getElementById('referral') /*change this id*/
-
-/* if cookie variable is not set or if the input does not exist on page, then do nothing otherwise set input with id of refferal to the value of the cookie and disable the form input field. This should be changed to match the id from your form.  */
-if (referral != null && referral != '') {
-  if (input != null && input != '') {
-    document.getElementById('referral').value = referral /*change this id*/
-    document.getElementById('referral').disabled = true /*change this id*/
+  if (ref != null) {
+    setCookie('ref', ref, 30)
   }
-}
+
+  if (ref == null || ref == '') {
+    referral = getCookie('ref')
+  } else {
+    referral = ref
+  }
+  input = document.getElementById('referral') /*change this id*/
+
+  if (referral != null && referral != '') {
+    if (input != null && input != '') {
+      document.getElementById('referral').value = referral /*change this id*/
+      document.getElementById('referral').disabled = true /*change this id*/
+    }
+  }
+}, 10)
