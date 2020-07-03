@@ -508,11 +508,11 @@ function SignupPage(props) {
           onHide={handleClose2}
         >
           <Modal.Header>
-            <Modal.Title>Emrit</Modal.Title>
+            <Modal.Title>Thank you and welcome to Team Emrit!</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            Your order has been received, You would receive an email from us
-            shortly.
+            Your order has been received. You will receive an email from us 2-3
+            weeks before your order is ready for shipment.
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose2}>

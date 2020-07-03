@@ -11,7 +11,7 @@ function Company(props) {
     if (content === 0) {
       return (
         <>
-          <h2> Adi Arul - Founder and CEO</h2>
+          <h2> Adi Arul - Founder</h2>
           <p>
             Aditya (Adi) Arul, a 6th grader at Atlanta International School is
             set to become an entrepreneur and that too of the disruptive kind.
@@ -221,7 +221,16 @@ function Company(props) {
       return (
         <>
           <h2> Simon Huang</h2>
-          <p></p>
+          <p>
+            Dr. Huang is a senior data scientist and computational biologist. He
+            gained his Ph.D. on computational biology at Rice University. He has
+            co-founded the tech company, Pheramor, the world’s first DNA-based
+            dating app, and served as Chief Technical Officer to lead the
+            product development team, architecture designs and algorithms
+            development. He is currently working as Data Scientist on clinical
+            R&D, algorithms development, and data analysis at a health tech
+            company.
+          </p>
         </>
       )
     }
