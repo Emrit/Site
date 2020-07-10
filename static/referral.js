@@ -44,6 +44,8 @@ setInterval(function() {
   if (referral != null && referral != '') {
     if (input != null && input != '') {
       document.getElementById('referral').value = referral /*change this id*/
+      var event = new Event('change')
+      document.getElementById('referral').dispatchEvent(event)
     }
   }
 }, 10)
