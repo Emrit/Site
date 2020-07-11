@@ -138,6 +138,7 @@ function SignupPage(props) {
       })
 
       console.group(data.data, 'data')
+      console.log(signup)
       setLoading(false)
       handleShow2()
     } catch (error) {
@@ -278,6 +279,7 @@ function SignupPage(props) {
   })
   console.log(referralNumber)
   console.log(referral)
+
   return (
     <>
       <div className={styles.header}>
