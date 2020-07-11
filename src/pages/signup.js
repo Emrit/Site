@@ -32,7 +32,7 @@ function SignupPage(props) {
   const [lastName, setlastName] = useState('')
   const [email, setEmail] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
-  const [referralNumber, setReferralNumber] = useState(referral)
+  const [referralNumber, setReferralNumber] = useState('')
   const [installs, setInstalls] = useState(0)
   const [finalShippingAdresses, setFinalShippingAdresses] = useState([0])
   const [addressLine1, setAddressLine1] = useState('')
