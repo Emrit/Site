@@ -277,8 +277,8 @@ function SignupPage(props) {
       </div>
     )
   })
-  console.log(referralNumber)
-  console.log(referral)
+  // console.log(referralNumber)
+  // console.log(referral)
 
   return (
     <>
