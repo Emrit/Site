@@ -65,25 +65,6 @@ function Company(props) {
     } else if (content === 2) {
       return (
         <>
-          <h2> Randall Pires - Co-founder, CTO/COO</h2>
-          <p>
-            Since graduating from Georgia Tech with an engineering degree in
-            '07, his next 10 years were spent working internationally, mostly in
-            Africa. His career started as a project engineer building the
-            largest LNG plant in the world. Afterwards Randall started his own
-            Wireless ISP company & had internet coverage for 100s of thousands
-            of users across 4 times zones in Africa, from Angola to South Sudan.
-            After the Civil War relapse in South Sudan he has been focused on
-            blockchain technologies, empowering the individual with access to
-            information (Internet 1.0), and access to Value Exchange (Internet
-            2.0). Randall is an international speaker sharing visions of Society
-            5.0.
-          </p>
-        </>
-      )
-    } else if (content === 3) {
-      return (
-        <>
           <h2> Arul Murugan - Advisor</h2>
           <p>
             An entrepreneur turned venture capitalist, Arul Murugan focuses on
@@ -97,6 +78,21 @@ function Company(props) {
             business models, scalable revenue and a clear path towards
             profitability. Arul’s key strengths are business model innovation,
             economics and Venture investments with strong financial acumen.
+          </p>
+        </>
+      )
+    } else if (content === 3) {
+      return (
+        <>
+          <h2> Kostandin Gjini</h2>
+          <p>
+            Finished school at Canadian Institute of Technology ( C.I.T ), with
+            a degree on software engineering. He is is a professional
+            videographer, and he has launched his agency Kinmans Media. His
+            agency is based offering services such as Video editing, Photo
+            editing, Web services, Design, Project Management, Support, IT and
+            more. He was born in Albania, the oldest country in Balkans. Known
+            as the Balkan Peninsula, is a geographic area in Southeast Europe.
           </p>
         </>
       )
@@ -213,8 +209,20 @@ function Company(props) {
     } else if (content === 8) {
       return (
         <>
-          <h2> Kostandin Gjini</h2>
-          <p></p>
+          <h2> Randall Pires - Co-founder, COO</h2>
+          <p>
+            Since graduating from Georgia Tech with an engineering degree in
+            '07, his next 10 years were spent working internationally, mostly in
+            Africa. His career started as a project engineer building the
+            largest LNG plant in the world. Afterwards Randall started his own
+            Wireless ISP company & had internet coverage for 100s of thousands
+            of users across 4 times zones in Africa, from Angola to South Sudan.
+            After the Civil War relapse in South Sudan he has been focused on
+            blockchain technologies, empowering the individual with access to
+            information (Internet 1.0), and access to Value Exchange (Internet
+            2.0). Randall is an international speaker sharing visions of Society
+            5.0.
+          </p>
         </>
       )
     } else if (content === 9) {
@@ -273,7 +281,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/randall_roundedsquare.png')}
+                  src={require('../../assets/arul_roundedsquare.png')}
                 />
               </div>
               <div
@@ -284,7 +292,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/arul_roundedsquare.png')}
+                  src={require('../../assets/Kostandin.png')}
                 />
               </div>
             </div>
@@ -302,7 +310,7 @@ function Company(props) {
               >
                 <Img
                   className={styles.Img}
-                  src={require('../../assets/Kostandin.png')}
+                  src={require('../../assets/randall_roundedsquare.png')}
                 />
               </div>
               <div
