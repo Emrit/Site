@@ -24,7 +24,6 @@ exports.signupSheet = catchAsync(async (req, res, next) => {
     'Last Name',
     'Email',
     'Phone Number',
-    'Referral Number',
     'Number of Installations',
     'Shipping Address',
     'Address Line 1',
