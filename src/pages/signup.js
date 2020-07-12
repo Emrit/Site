@@ -56,6 +56,11 @@ function SignupPage(props) {
   ])
 
   const formValues = useRef(null)
+  const refValue = useRef(null)
+
+  const onButtonClick = () => {
+    setReferralNumber(refValue.current.value)
+  }
 
   const [show, setShow] = useState(false)
   const [show2, setShow2] = useState(false)
@@ -277,8 +282,7 @@ function SignupPage(props) {
       </div>
     )
   })
-  // console.log(referralNumber)
-  // console.log(referral)
+  console.log(referralNumber)
 
   return (
     <>
@@ -315,6 +319,7 @@ function SignupPage(props) {
                   type="text"
                   placeholder="First name"
                   onChange={e => setFirst(e.target.value)}
+                  onClick={onButtonClick}
                 />
                 <Form.Control.Feedback type="invalid">
                   Please your first name
@@ -397,6 +402,7 @@ function SignupPage(props) {
                   name="referral"
                   type="text"
                   placeholder="Referral"
+                  ref={refValue}
                   onChange={e => setReferralNumber(e.target.value)}
                 />
                 <Form.Control.Feedback type="invalid">
