@@ -284,7 +284,7 @@ function Company(props) {
                   src={require('../../assets/arul_roundedsquare.png')}
                 />
               </div>
-              <div
+              {/* <div
                 className={styles.box}
                 onClick={() => {
                   setContent(3)
@@ -294,7 +294,7 @@ function Company(props) {
                   className={styles.Img}
                   src={require('../../assets/Kostandin.png')}
                 />
-              </div>
+              </div> */}
             </div>
           </Col>
           <Col xs={12} md={12} lg={8} className={styles.col}>
@@ -324,7 +324,19 @@ function Company(props) {
                   src={require('../../assets/Simon.png')}
                 />
               </div>
+              <div
+                className={styles.box}
+                onClick={() => {
+                  setContent(3)
+                }}
+              >
+                <Img
+                  className={styles.Img}
+                  src={require('../../assets/Kostandin.png')}
+                />
+              </div>
             </div>
+
             {/* <div className={styles.rightContainer}>
               <div
                 className={styles.box}
